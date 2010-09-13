@@ -52,6 +52,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/mathplot.h
 %{_libdir}/libmathplot.a
 %{_datadir}/wxMathPlot
-#%attr(755,root,root)%{_datadir}/wxMathPlot
-#%{_datadir}/wxMathPlot/Doxyfile
-#%{_datadir}/wxMathPlot/samples
