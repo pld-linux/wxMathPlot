@@ -1,12 +1,12 @@
 Summary:	wxMathPlot
 Summary(pl.UTF-8):	wxMathPlot
 Name:		wxMathPlot
-Version:	0.1.1
-Release:	0.1
+Version:	0.1.2
+Release:	1
 License:	wxWindows Library Licence 3.1 (LGPL v2+ with exception)
 Group:		Development/Libraries
-Source0:	http://dl.sourceforge.net/project/wxmathplot/wxmathplot/0.1.1/%{name}-%{version}.tar.gz
-# Source0-md5:	f77184316d4d1df83bc7a3485135e90a
+Source0:	http://dl.sourceforge.net/project/wxmathplot/wxmathplot/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	40ebdc284ca29a09309ff1eb0b5c0562
 URL:		http://wxmathplot.sourceforge.net/
 BuildRequires:	cmake
 BuildRequires:	wxGTK2-unicode-devel
@@ -51,5 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Changelog
 %{_includedir}/mathplot.h
 %{_libdir}/libmathplot.a
-%{_datadir}/wxMathPlot/Doxyfile
-%{_datadir}/wxMathPlot/samples
+%{_datadir}/wxMathPlot
+#%attr(755,root,root)%{_datadir}/wxMathPlot
+#%{_datadir}/wxMathPlot/Doxyfile
+#%{_datadir}/wxMathPlot/samples
